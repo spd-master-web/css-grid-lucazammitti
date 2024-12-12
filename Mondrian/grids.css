@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  
+  size: 90px;
+  background-color: black;
+}
+
+.container {
+  height: 48em;
+  display: grid; 
+  grid-template-columns: 0.4fr 1.6fr 1fr 1fr; 
+  grid-template-rows: 1.6fr 0.6fr 1.6fr 0.2fr; 
+  gap: 10px 10px; 
+  grid-template-areas: 
+    "Red Red White White"
+    "White-2 White-2 White-3 White-3"
+    "Yellow White-4 Blue White-6"
+    "Yellow White-4 White-5 White-6"; 
+}
+.Red { grid-area: Red;
+background-color: rgb(255, 73, 73);}
+
+.White { grid-area: White;
+background-color: rgb(230, 230, 230); }
+
+.White-2 { grid-area: White-2;
+background-color: rgb(230, 230, 230); }
+
+.White-3 { grid-area: White-3;
+background-color: rgb(230, 230, 230); }
+
+.Yellow { grid-area: Yellow;
+background-color: yellow; }
+
+.White-4 { grid-area: White-4;
+background-color: rgb(230, 230, 230); }
+
+.Blue { grid-area: Blue;
+background-color: rgb(18, 18, 104); }
+
+.White-5 { grid-area: White-5;
+background-color: rgb(230, 230, 230); }
+
+.White-6 { grid-area: White-6;
+background-color: rgb(230, 230, 230); }
